@@ -11,8 +11,9 @@ destination and label: `[[destination page|click here]]`
 ```go
 import (
     "bytes"
+
+    wiki "git.sr.ht/~kota/goldmark-wiki"
     "github.com/yuin/goldmark"
-    "github.com/yuin/goldmark/extension"
 )
 
 md := goldmark.New(
