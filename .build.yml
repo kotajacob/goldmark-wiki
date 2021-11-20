@@ -1,0 +1,9 @@
+image: alpine/latest
+packages:
+  - go
+sources:
+  - https://git.sr.ht/~kota/goldmark-wiki
+tasks:
+  - test: |
+      cd goldmark-wiki
+      go test
